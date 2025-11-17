@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>meyespace</title>
+    <link rel="icon" type="image/x-icon" href="img/eyefavicon.png">
+    <style>
+        body {
+            background-color: black;
+            font-family: monospace;
+        }
+
+        #container {
+            display: grid;
+            grid-template-areas: 'header header'
+                'sidebar content'
+                'footer footer';
+            grid-template-columns: 20% auto;
+            grid-template-rows:150px auto auto;
+            max-width:800px;
+            border:3px double white;
+            margin:30px;
+        }
+
+        #container div{
+            color:white;
+        }
+        #header {
+            grid-area: header;
+            border-bottom:1px solid white;
+        }
+
+        #sidebar {
+            grid-area: sidebar;
+        }
+
+        #content {
+            grid-area: content;
+            padding:30px;
+            align-items:center;
+        }
+
+        #footer {
+            grid-area:footer;
+            place-content: center;
+            text-align:center;
+            font-size:small;
+            border-top:10px double white;
+            padding:5px;
+        }
+        ul{
+            list-style:none;
+            padding-left:0px;
+            font-size:x-large;
+            text-decoration:underline;
+        }
+        li{
+            padding:15px;
+        }
+        li:nth-child(even){
+            background-color:#333333;
+        }
+        li:hover{
+            color:red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id=container>
+        <div id=header>
+            <img src='img/logo_placehold.png' style=height:90%;>
+        </div>
+        <div id=sidebar>
+            <ul>
+            <li>Home</li>
+                <li>About</li>
+                <li>See Us</li>
+                <li>Our Story</li>
+            </ul>
+            <img src='img/eye_placeholder1.png' style=width:80%;margin-left:25%>
+        </div>
+        <div id=content>
+            <p>Ad legam nisi in quamquam a et lorem laboris cohaerescant, ad consequat non 
+                probant, possumus fugiat quamquam laborum, ita sed nisi mentitum eu arbitror 
+                duis e incididunt instituendarum, deserunt minim a voluptate consectetur, dolor 
+                e do cillum mentitum. Aute possumus ut voluptate ubi te in fidelissimae. Eram 
+                <img src='img/tv.png' style=float:right;height:150px;>
+                offendit nostrud hic aut fore cupidatat cupidatat. Esse incididunt ea anim amet. 
+                Illum deserunt est nulla culpa est excepteur concursionibus iis iudicem nam amet 
+                deserunt ne occaecat, an quamquam ubi deserunt. Multos litteris philosophari, 
+                irure iudicem ab despicationes.</p>
+            <h2>Do you want to see?</h2>
+            <button style=background-color:red;font-size:xx-large>Enter</button>
+        </div>
+        <div id=footer>
+            <p>we could put fake credits in here. could be funny. link to works cited maybe???<br>(c)2025</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
