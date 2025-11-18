@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>meyespace</title>
+    <link rel="icon" type="image/x-icon" href="img/eyefavicon.png">
+    <style>
+        * {
+            font-family: monospace;
+            transition:.05s linear;
+        }
+
+        body {
+            color: white;
+            background-color: black;
+            font-family: monospace;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            margin-top:60px;
+            align-items: center;
+            place-content: center;
+            margin-inline: auto;
+            width: 80%;
+        }
+        #container a {
+            color:white;
+            font-size:large;
+        }
+        #container a:hover, #imp:hover{
+            color:red;
+        }
+        #container div {
+            margin: 10px;
+        }
+
+
+        #content {
+            text-align: center;
+            font-size: large;
+        }
+
+        #content button {
+            background-color: red;
+            font-size: xx-large;
+        }
+
+        #content button:hover {
+            transform:scale(1.2)
+        }
+        #content button:active{
+            filter:brightness(0.3)
+        }
+        #imp{
+            font-weight:bolder
+        }
+    </style>
+</head>
+
+<body>
+    <div id=container>
+        <div id=header>
+            <img src='img/logo_placehold.png' style=height:150px;>
+        </div>
+        <div id=navigation>
+            <p>
+                <a href=#>home</a> | <a href=#>about</a> | <a href=#>see us</a> | <a href=#>our story</a>
+        </div>
+        <div id=content>
+            <img src='img/eyetv.gif' style=height:150px;><br>
+            <h3>Do you want to <span id=imp>see?</span></h3>
+            <button>enter</button>
+        </div>
+        <div id=footer style=font-size:xx-small>
+            <p>credits go here (c)2025</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
